@@ -1,6 +1,6 @@
 # StartFlex
 
-## Technologies Used
+## Technologies used
 * HTML
 * Scss
 * Bootstrap
@@ -9,6 +9,6 @@
 ## Description
 I tried to use bootstrap on my style so i customize it some how and add a few things like the animation reveal elements in js 
 
-## Live View [StartFlex]((https://templatemo.com/live/templatemo_562_space_dynamic)
-)
+## Live view [StartFlex](https://startflex.netlify.app/)
+## The template i tried to implement [StartFlex](https://bootstrapmade.com/demo/templates/FlexStart/)
 
