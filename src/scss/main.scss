@@ -1,0 +1,31 @@
+// Bootstrap stuff 
+@import "./variables";
+@import "./utilities";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Mine stuff :)
+@import "./reset";
+@import "./helpers/mixins";
+@import "./helpers/components";
+
+// Pages 
+@import "./pages/header";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/our-values";
+@import "./pages/stats";
+@import "./pages/features";
+@import "./pages/services";
+@import "./pages/pricing";
+@import "./pages/FAQ";
+@import "./pages/portfolio";
+@import "./pages/testimonials";
+@import "./pages/team";
+@import "./pages/our-clients";
+@import "./pages/blog";
+@import "./pages/contact";
+@import "./pages/footer";
+@import "./pages/loader";
+
+
+@import "./animation/reveal";

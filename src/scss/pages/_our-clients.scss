@@ -1,0 +1,49 @@
+.our-clients {
+    .box { 
+        display: flex;
+        &:hover .slider { animation-play-state: paused }
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top:0;
+            height: 100%;
+            width: 30px;
+            z-index: 2;
+        }
+        &::before {
+            background-image: linear-gradient(to right , #fff , transparent);
+            left: 0;
+        }
+        &::after {
+            background-image: linear-gradient(to left , #fff , transparent);
+            right: 0;
+        }
+    }
+    .slider {
+        --img-width: 50vw;
+        @include br(sm) {--img-width: 25vw }
+        @include br(md) {--img-width: 20vw }
+        @include br(lg) {--img-width: 15vw }
+        display: flex;
+        align-items: center;
+        transition: .5s ease;
+        min-width: calc(var(--img-width) * 8);
+        animation: scroll 7s infinite linear;
+        img {
+            width: var(--img-width);
+            padding: 0 3vw;
+            transition: .3s ease;
+            opacity: .5;
+            cursor: pointer;
+            &:hover { opacity: 1 }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0%)}
+    100% { transform: translateX(-100%)}
+}

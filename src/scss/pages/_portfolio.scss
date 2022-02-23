@@ -1,0 +1,92 @@
+.portfolio {
+    .gallery__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 25px; 
+        li {
+            padding: 8px 20px;
+            transition: .3s ease;
+            border: solid 1px transparent;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 600;
+            &.active,
+            &:hover {
+                border-color: $primary;
+                color: $primary;
+            }
+        }
+    }
+
+    .gallery__imgs {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: 100%;
+            @include br(sm) { width: calc(100% / 2) } 
+            @include br(md) { width: calc(100% / 3) } 
+            position: relative;
+            padding: .75rem;
+            &.hide { display: none }
+            &.show {animation: img-anime .5s ease-in-out forwards }
+            img { transition: .5s ease-in-out }
+            &:hover {
+                img { transform: scale(1.1) }
+                .content {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .content {
+            position: absolute;
+            inset: 0;
+            transition: .5s ease-in-out;
+            opacity: 0;
+            transform: scale(.8);
+            background-color: rgba(#fff , .7);
+            span { font-size: 14px }
+            .btn {
+                line-height: 35px;
+                height: 35px;
+                width: 35px;
+                padding: 0;
+            }
+
+            &::before,
+            &::after {
+                content:'';
+                position: absolute;
+                border-color:#B8BAC4;
+                border-width: 3px;
+                height: 50px;
+                width: 50px;
+            }
+
+            &::before {
+                left: 10%;
+                top: 10%;
+                border-left-style: solid;
+                border-top-style: solid;
+            }
+            &::after {
+                right: 10%;
+                bottom: 10%;
+                border-right-style: solid;
+                border-bottom-style: solid;
+            }
+        }
+    }
+}
+
+@keyframes img-anime {
+    0% { transform: scale(0) }
+    100% { transform: scale(1) }
+}

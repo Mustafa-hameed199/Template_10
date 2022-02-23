@@ -1,0 +1,18 @@
+.our-values {
+    .box {
+        padding: 30px;
+        transition: .5s ease;
+        box-shadow: 0 .125rem .25rem rgba(black, .075);
+        &:hover {
+            box-shadow: 0 .2rem 1rem rgba(black, .075);
+            img {
+                transform: scale(.9);
+            }
+        }
+        img {
+            transition: .5s ease;
+            @include br(xs) { padding: 10px 30px }
+            padding: 30px 50px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.services {
+    .box {
+        transition: .3s ease;
+
+        h3 { color: $dark }
+        p { color: $text }
+        .icon {
+            width: 70px;
+            height: 70px;
+            font-size: 36px;
+            position: relative;
+            border-radius: 5px;
+    
+            &::after {
+                content: '\f27a';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 3;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background-color: currentColor;
+                opacity: .2;
+            }
+        }
+        
+        &:hover {
+            background-color: currentColor;
+            > *:not(.icon) { color: white }
+            .icon::before { background-color: white; opacity: 1 }
+        }
+    }
+}

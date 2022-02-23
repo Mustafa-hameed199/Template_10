@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Font ~~~~~~~~~~~~~~~~~ -->
+        <!-- nunito  -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,700&family=Cairo:wght@300;400;700&family=Kanit:wght@100;200;300;500&family=M+PLUS+1+Code:wght@200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700;900&family=Source+Sans+Pro:wght@200;300;400;700&display=swap"
+            rel="stylesheet"
+            />
+        <!-- open sans  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,700&family=Cairo:wght@300;400;700&family=Kanit:wght@100;200;300;500&family=M+PLUS+1+Code:wght@200;300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700;900&family=Source+Sans+Pro:wght@200;300;400;700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~~~ -->
+        <script src="https://kit.fontawesome.com/f62c694d72.js" crossorigin="anonymous"></script>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~ -->
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~ -->
+        <script src="../js/bootstrap.min.js" defer ></script>
+        <script src="../js/blog.js" defer ></script>
+        <title>FlexStart</title>
+    </head>
+    <body class="blog-body">
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Loader ~~~~~~~~~~~~~~~~~ -->
+        <div class="loader">
+            <img src="../../src/img/loader.gif">
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~ -->
+        <header class="header fixed-top">
+            <nav class="nav navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center gap-1" href="index.html">
+                        <img src="../../src/img/logo.png" alt="Brand Image" />
+                        <span class="logo-span fw-bold text-info">
+                            FlexStart
+                        </span>
+                    </a>
+                    <button
+                        class="d-lg-none navbar-toggler border-0 d-flex flex-column justify-content-between align-items-center rounded-0 p-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#nav-links"
+                        aria-controls="nav-links"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                        <span class="w-100 bg-info"></span>
+                        <span class="w-100 bg-info"></span>
+                        <span class="w-100 bg-info"></span>
+                    </button>
+                    <div class="collapse navbar-collapse rounded" id="nav-links">
+                        <ul class="navbar-nav ms-auto text-capitalize text-info fw-bold text-center">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="#home"
+                                    data-scroll="home"
+                                    >home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#about"
+                                    data-scroll="about"
+                                    >about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#features"
+                                    data-scroll="features"
+                                    >features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#services"
+                                    data-scroll="services"
+                                    >services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#portfolio"
+                                    data-scroll="portfolio"
+                                    >portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#team"
+                                    data-scroll="team"
+                                    >team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#blog"
+                                    data-scroll="blog"
+                                    >blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="#contact"
+                                    data-scroll="contact"
+                                    >contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold btn btn-primary text-capitalize text-white" data-scroll="#about">
+                                    get started 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Breadcrumb ~~~~~~~~~~~~~~~~~ -->
+        <div class="bg-info text-white py-3" aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./blog-page.html" target="_blank">Blog Page</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+                <h3 class="text-capitalize">blog single</h3>
+            </div>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Blog ~~~~~~~~~~~~~~~~~ -->
+        <section class="sec sec-py blog-page" id="blog">
+            <div class="container">
+                <div class="row justify-content-center gx-lg-5 gy-5 gy-lg-0">
+                    <div class="col-lg-8">
+                        <article class="article mb-6 tr-y-100px un-reveal spot shadow">
+                            <div class="card mb-4 overflow-hidden border-0">
+                                <div class="card-img-top">
+                                    <img src="../../src/img/blog/blog-1.jpg" alt="blog page Image">
+                                </div>
+                                <div class="card-body py-4">
+                                    <h3 class="card-title fw-bold text-info"><a href="blog-single-page.html"  target="_blank">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a></h3>
+                                    <ul class="info text-capitalize p-0 d-flex gap-3 align-items-center flex-wrap my-3 font-open-sans">
+                                        <li class="c-pointer">
+                                            <i class="fa-regular fa-user me-1 text-blue"></i>
+                                            <a href="blog-single-page.html"  target="_blank"> john doe </a>
+                                        </li>
+                                        <li class="c-pointer">
+                                            <i class="fa-regular fa-clock me-1 text-blue"></i>
+                                            <a href="blog-single-page.html"  target="_blank"> jan 1, 2020 </a>
+                                        </li>
+                                        <li class="c-pointer">
+                                            <i class="fa-regular fa-comment-dots me-1 text-blue"></i>
+                                            <a href="blog-single-page.html"  target="_blank"> 12 comments </a>
+                                        </li>
+                                    </ul>
+                                    <p class="text-text font-open-sans">
+                                        Similique neque nam consequuntur ad non maxime aliquam quas.
+                                        Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt.
+                                        Voluptate porro consequatur assumenda perferendis dolore.
+                                        <br/><br/>
+                                        Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. 
+                                        Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                                    </p>
+
+                                    <blockquote class="quote fst-italic text-text font-open-sans text-center">
+                                        Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. 
+                                        Aut eos aliquam doloribus minus autem quos.
+                                    </blockquote>
+                                    <p class="text-text font-open-sans">
+                                        Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. 
+                                        Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. 
+                                        Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                                    </p>
+                                    <h4 class="fw-bold text-text mt-4">Et quae iure vel ut odit alias.</h4>
+                                    <p class="text-text font-open-sans">
+                                        Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. 
+                                        Voluptate ex rerum assumenda dolores nihil quaerat. Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque. Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. 
+                                        Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                                    </p>
+                                    <img src="../../src/img/blog/blog-inside-post.jpg" alt="article image">
+                                    <h4 class="fw-bold text-text mt-4">Ut repellat blanditiis est dolore sunt dolorum quae.</h4>
+                                    <p class="text-text font-open-sans">
+                                        Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. 
+                                        In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel. 
+                                        Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. 
+                                        Veritatis numquam ut illum ut a quam vitae.
+                                        <br/><br/>
+                                        Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                                    </p>
+                                    <ul class="article__footer d-flex text-info text-capitalize list-unstyled font-open-sans border-top pt-2 text-center text-sm-normal">
+                                        <li><i class="fa-solid fa-folder-open me-1 text-primary"></i><a href="#" class="me-3"> business</a></li>
+                                        <li><i class="fa-solid fa-tags me-1 text-primary"></i><a href="#"><a href="#">creative </a>, <a href="#">tips </a>, <a href="#">marketing </a></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="author mb-6 d-flex align-items-center gap-3 shadow tr-y-50 un-reveal spot">
+                            <div class="author__img">
+                                <img src="../../src/img/blog/blog-author.jpg" class="rounded-circle" alt="author image">
+                            </div>
+                            <div class="author__content">
+                                <h4 class="text-info text-capitalize">jane smith</h4>
+                                <ul class="autor__social d-flex gap-2 list-unstyled mb-2">
+                                    <li><a href="https://www.twitter.com" class="text-info text-opacity-50"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com" class="text-info text-opacity-50"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com" class="text-info text-opacity-50"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                                <p class="text-text fst-italic text-opacity-50 font-open-sans">
+                                    Itaque quidem optio quia voluptatibus dolorem dolor. 
+                                    Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. 
+                                    Esse et accusantium ut unde voluptas.</p>
+                            </div>
+                        </div>
+                        <div class="comments mb-6">
+                            <h4 class="fw-bold text-capitalize mb-4">8 comments</h4>
+                            <div class="content d-flex flex-column gap-5">
+                                <div class="person tr-y-25 un-reveal spot d-flex gap-3">
+                                    <div  class="person__img">
+                                        <img src="../../src/img/blog/comments-1.jpg" alt="person who comment imgae">
+                                    </div>
+                                    <div class="text">
+                                        <h5 class="fw-bold text-capitalize h6 m-0">
+                                            <a href="#" class="name">georgia reader</a> 
+                                            <span class="reply ms-3"><a href="#"><i class="fa-solid fa-reply me-2"></i>reply</a></span>
+                                        </h5>
+                                        <span class="time text-primary text-capitalize font-open-sans d-inline-block my-1">01 jan, 2020</span>
+                                        <p class="font-open-sans">Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. 
+                                            Est ad aut sapiente quis molestiae est qui cum soluta. Vero aut rerum vel. 
+                                            Rerum quos laboriosam placeat ex qui. Sint qui facilis et.</p>
+                                    </div>
+                                </div>
+
+                                <div class="person tr-y-25 un-reveal spot d-flex gap-3">
+                                    <div  class="person__img">
+                                        <img src="../../src/img/blog/comments-2.jpg" alt="person who comment imgae">
+                                    </div>
+                                    <div class="text">
+                                        <h5 class="fw-bold text-capitalize h6 m-0">
+                                            <a href="#" class="name">aron alvarado</a> 
+                                            <span class="reply ms-3"><a href="#"><i class="fa-solid fa-reply me-2"></i>reply</a></span>
+                                        </h5>
+                                        <span class="time text-primary text-capitalize font-open-sans d-inline-block my-1">01 jan, 2020</span>
+                                        <p class="font-open-sans">
+                                            Ipsam tempora sequi voluptatem quis sapiente non. 
+                                            Autem itaque eveniet saepe. Officiis illo ut beatae.</p>
+                                    </div>
+                                </div>
+
+                                <div class="nested">
+                                    <div class="person tr-y-25 un-reveal spot d-flex gap-3 mb-6">
+                                        <div  class="person__img">
+                                            <img src="../../src/img/blog/comments-3.jpg" alt="person who comment imgae">
+                                        </div>
+                                        <div class="text">
+                                            <h5 class="fw-bold text-capitalize h6 m-0">
+                                                <a href="#" class="name">lynda small</a> 
+                                                <span class="reply ms-3"><a href="#"><i class="fa-solid fa-reply me-2"></i>reply</a></span>
+                                            </h5>
+                                            <span class="time text-primary text-capitalize font-open-sans d-inline-block my-1">01 jan, 2020</span>
+                                            <p class="font-open-sans">
+                                                Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. 
+                                                Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae. Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat. Libero corporis qui. Nam illo odio beatae enim ducimus. 
+                                                Harum reiciendis error dolorum non autem quisquam vero rerum neque
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="nested">
+                                        <div class="person tr-y-25 un-reveal spot d-flex gap-3">
+                                            <div  class="person__img">
+                                                <img src="../../src/img/blog/comments-4.jpg" alt="person who comment imgae">
+                                            </div>
+                                            <div class="text">
+                                                <h5 class="fw-bold text-capitalize h6 m-0">
+                                                    <a href="#" class="name">sianna ramsay</a> 
+                                                    <span class="reply ms-3"><a href="#"><i class="fa-solid fa-reply me-2"></i>reply</a></span>
+                                                </h5>
+                                                <span class="time text-primary text-capitalize font-open-sans d-inline-block my-1">01 jan, 2020</span>
+                                                <p class="font-open-sans">
+                                                    Et dignissimos impedit nulla et quo distinctio ex nemo. 
+                                                    Omnis quia dolores cupiditate et. Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. 
+                                                    Perferendis id consectetur necessitatibus.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="person tr-y-25 un-reveal spot d-flex gap-3">
+                                    <div  class="person__img">
+                                        <img src="../../src/img/blog/comments-5.jpg" alt="person who comment imgae">
+                                    </div>
+                                    <div class="text">
+                                        <h5 class="fw-bold text-capitalize h6 m-0">
+                                            <a href="#" class="name">nolan davidson</a> 
+                                            <span class="reply ms-3"><a href="#"><i class="fa-solid fa-reply me-2"></i>reply</a></span>
+                                        </h5>
+                                        <span class="time text-primary text-capitalize font-open-sans d-inline-block my-1">01 jan, 2020</span>
+                                        <p class="font-open-sans">
+                                            Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium tempore.
+                                            Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at. Non aut et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur officia beatae ea aut eos soluta. 
+                                            Non qui dolorum voluptatibus et optio veniam. Quam officia sit nostrum dolorem.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="person tr-y-25 un-reveal spot d-flex gap-3">
+                                    <div  class="person__img">
+                                        <img src="../../src/img/blog/comments-6.jpg" alt="person who comment imgae">
+                                    </div>
+                                    <div class="text">
+                                        <h5 class="fw-bold text-capitalize h6 m-0">
+                                            <a href="#" class="name">kay duggan</a> 
+                                            <span class="reply ms-3"><a href="#"><i class="fa-solid fa-reply me-2"></i>reply</a></span>
+                                        </h5>
+                                        <span class="time text-primary text-capitalize font-open-sans d-inline-block my-1">01 jan, 2020</span>
+                                        <p class="font-open-sans">
+                                            Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. 
+                                            Cumque sed quia ut maxime. 
+                                            Est ad aut cum. Ut exercitationem non in fugiat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reply-form shadow tr-y-25 un-reveal spot">
+                            <h4 class="fw-bold text-capitalize">leave a reply</h4>
+                            <p class="text-text font-open-sans">Your email address will not be published. Required fields are marked*</p>
+                            <form class="row g-4 font-open-sans">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control"  placeholder="Your Name*">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email*" >
+                                </div>
+                                <div class="col-12">
+                                    <input type="url" class="form-control" placeholder="Your Website">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="w-100 form-control" placeholder="Your Comment*"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="text-capitalize btn text-white btn-info px-3 py-2">post comment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ---------------- Aside ------------------- -->
+                    <div class="col-lg-4">
+                        <aside class="aside shadow rounded d-flex flex-column gap-4 tr-y-100px un-reveal spot">
+                            <div class="search">
+                                <h5 class="text-info fw-bold text-capitalize mb-3">search</h4>
+                                <div class="form d-flex">
+                                    <input type="text" class="form-control rounded-0">
+                                    <button type="submit" class="btn btn-primary text-white rounded-0 rounded-end fs-6 py-2 px-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="categories">
+                                <h5 class="text-info fw-bold text-capitalize mb-3">categories</h5>
+                                <ul class="d-flex flex-column gap-2 list-unstyled m-0 font-open-sans">
+                                    <li>
+                                        <a href="#" class="text-capitalize">general
+                                            <span class="text-text text-opacity-50">(25)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-capitalize">lifestyle
+                                            <span class="text-text text-opacity-50">(12)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-capitalize">travel
+                                            <span class="text-text text-opacity-50">(5)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-capitalize">design
+                                            <span class="text-text text-opacity-50">(22)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-capitalize">creative
+                                            <span class="text-text text-opacity-50">(8)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-capitalize">educaion
+                                            <span class="text-text text-opacity-50">(14)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="recent-posts">
+                                <h5 class="text-info fw-bold text-capitalize mb-3">recent posts</h5>
+                                <div class="d-flex mb-3">
+                                        <img src="../../src/img/blog/blog-recent-1.jpg" class="me-3" alt="recent posts image">
+                                    <div>
+                                        <a href="#" class="d-block mb-2 fw-bold lh-sm">Nihil blanditiis at in nihil autem</a>
+                                        <span class="text-text text-opacity-50 fst-italic font-open-sans">Jan 1, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                        <img src="../../src/img/blog/blog-recent-2.jpg" class="me-3" alt="recent posts image">
+                                    <div>
+                                        <a href="#" class="d-block mb-2 fw-bold lh-sm">Quidem autem et impedit</a>
+                                        <span class="text-text text-opacity-50 fst-italic font-open-sans">Jan 1, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                        <img src="../../src/img/blog/blog-recent-3.jpg" class="me-3" alt="recent posts image">
+                                    <div>
+                                        <a href="#" class="d-block mb-2 fw-bold lh-sm">Id quia et et ut maxime similique occaecati ut</a>
+                                        <span class="text-text text-opacity-50 fst-italic font-open-sans">Jan 1, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                        <img src="../../src/img/blog/blog-recent-4.jpg" class="me-3" alt="recent posts image">
+                                    <div>
+                                        <a href="#" class="d-block mb-2 fw-bold lh-sm">Laborum corporis quo dara net para</a>
+                                        <span class="text-text text-opacity-50 fst-italic font-open-sans">Jan 1, 2020</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3">
+                                        <img src="../../src/img/blog/blog-recent-5.jpg" class="me-3" alt="recent posts image">
+                                    <div>
+                                        <a href="#" class="d-block mb-2 fw-bold lh-sm">Et dolores corrupti quae illo quod dolor</a>
+                                        <span class="text-text text-opacity-50 fst-italic font-open-sans">Jan 1, 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tags">
+                                <h5 class="text-info fw-bold text-capitalize mb-3">tags</h5>
+                                <ul class="aside__tags-list d-flex flex-wrap gap-2 text-capitalize list-unstyled m-0">
+                                    <li><a href="#">app</a></li>
+                                    <li><a href="#">IT</a></li>
+                                    <li><a href="#">business</a></li>
+                                    <li><a href="#">mac</a></li>
+                                    <li><a href="#">design</a></li>
+                                    <li><a href="#">office</a></li>
+                                    <li><a href="#">creative</a></li>
+                                    <li><a href="#">studio</a></li>
+                                    <li><a href="#">smart</a></li>
+                                    <li><a href="#">tips</a></li>
+                                    <li><a href="#">marketing</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ News Letter ~~~~~~~~~~~~~~~~~ -->
+        <section class="news-letter sec-py bg-light1">
+            <div class="container tr-y-50 un-reveal spot">
+                <h4 class="text-capitalize fw-bold text-center text-info">our newsletter</h4>
+                <p class="text-center text-text fs-14 font-open-sans mb-5">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form class="d-flex justify-content-center w-md-75 w-lg-50 mx-auto">
+                    <input type="text" class="form-control rounded-0 rounded-start">
+                    <button type="submit" class="text-capitalize text-white btn btn-primary rounded-0 rounded-end">subscribe</button>
+                </form>
+            </div>
+        </section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~ -->
+        <footer>
+            <div class="footer sec-py overflow-hidden">
+                <div class="container">
+                    <div class="row gy-5">
+                        <div class="col-lg-5">
+                            <div class="content tr-y-100px un-reveal spot">
+                                <a class="d-flex align-items-center gap-1 mb-2" href="index.html">
+                                    <img src="../../src/img/logo.png" alt="Brand Image" />
+                                    <span class="logo-span fw-bold text-info"> FlexStart </span>
+                                </a>
+                                <p class="text-text font-open-sans fs-14">
+                                    Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita 
+                                    valies darta donna mare fermentum iaculis eu non diam phasellus.
+                                </p>
+                                <ul class="social d-flex align-items-center gap-3 p-0 ">
+                                    <li><a href="index.html"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="col-lg-7">
+                            <div class="row gy-4">
+                                <div class="col-sm-6 col-lg-4 text-center text-lg-start tr-y-100px un-reveal spot">
+                                    <h6 class="text-uppercase text-info fw-bold mb-3">usefull links</h6>
+                                    <ul class="d-flex flex-column gap-2 font-open-sans fs-14 text-capitalize p-0">
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> home</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> about us</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> services</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> terms of service</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> privacy policy</a></li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-sm-6 col-lg-4 text-center text-lg-start tr-y-100px un-reveal spot">
+                                    <h6 class="text-uppercase text-info fw-bold mb-3">our services</h6>
+                                    <ul class="d-flex flex-column gap-2 font-open-sans fs-14 text-capitalize p-0">
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> web design</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> web development</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> product management</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> marketing</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-angle-right text-text text-opacity-25"></i> graphic design</a></li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-sm-6 col-lg-4 d-grid text-center text-lg-start tr-y-100px un-reveal spot">
+                                    <h6 class="text-uppercase text-info fw-bold mb-3">contact us</h6>
+                                    <p class="text-text fs-14">
+                                        A108 Adam Street <br/>
+                                        New York, NY 535022<br/>
+                                        United States<br/>
+                                    </p>
+                                    <p class="text-text fs-14">
+                                        <span class="fw-bold">Phone:</span> +1 5589 55488 55 <br/>
+                                        <span class="fw-bold">Email:</span> info@example.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright py-4 text-center bg-light1 fs-14 text-capitalize overflow-hidden">
+                <div class="content tr-y-100 un-reveal spot">
+                    <p class="text-text mb-2">© copyright <span class="fw-bold">FlexStart</span>. all rights reserved</p>
+                    <p class="text-text"> Designed By <a href="https://bootstrapmade.com/" target="_blank" class="text-primary">BootstrapMade</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

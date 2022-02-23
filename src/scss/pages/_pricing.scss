@@ -1,0 +1,15 @@
+.pricing {
+    .box {
+        transition: .3s ease;
+        &:hover { transform: scale(1.05) }
+        .price { font-size: 36px }
+        a {
+            color: $primary;
+            transition: .3s ease;
+            &:hover {
+                color: #fff;
+                background-color: $primary;
+            }
+        }
+    }
+}

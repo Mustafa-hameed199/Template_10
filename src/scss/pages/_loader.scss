@@ -1,0 +1,15 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+    transition: .3s ease-out;
+    background: #DCF3F2;
+    
+    &.hide {
+        opacity: 0;
+        transition: .3s ease-out , z-index 0s .3s ease;
+        z-index: -10000;
+    }
+}

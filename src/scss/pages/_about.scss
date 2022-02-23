@@ -1,0 +1,11 @@
+.about {
+
+    .content {
+        .title { font-size: 14px }
+    }
+    .btn {
+        i { transition: .3s ease-out }
+        &:hover { i { transform: translateX(5px)} }
+    }
+
+}

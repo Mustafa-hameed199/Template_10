@@ -1,0 +1,31 @@
+.main-heading {
+    padding-bottom: 2.5rem; // 40px
+    text-align: center;
+    h4 {
+        color: $primary;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: .625rem // 10px
+    }
+
+    h2 {
+        color: $info;
+        font-size: clamp( 1.75rem , 1rem + 2vw , 2.375rem );
+        font-weight: 700;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 42px;
+        text-transform: capitalize;
+    }
+}
+
+.indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px $primary;
+    transition: .3s ease;
+    &.active { background-color: $primary }
+}

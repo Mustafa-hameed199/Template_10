@@ -1,0 +1,12 @@
+.un-reveal {
+    transition: none;
+    transition-timing-function: var(--transition_ease_func) !important;
+    transition-property: all !important;
+    transition-duration: var(--transition_duration) !important;
+    opacity: 0 !important;
+}
+
+.spotted {
+    transform: translate(0,0) scale(1) !important;
+    opacity: 1 !important;
+}

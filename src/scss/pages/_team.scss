@@ -1,0 +1,26 @@
+.team {
+    h6 , p { font-size: 14px }
+    .card {
+        transition: .3s ease-out;
+        .shape { bottom: -3px }
+        &:hover { 
+            .social { right: .5rem }
+            transform: scale(1.075);
+        }
+    }
+
+    .social {
+        position: absolute;
+        right: -50%;
+        top: 25%;
+        transform: translateY(-25%);
+        transition: .5s ease-out;
+        background: rgba(white , .4);
+        font-size: 18px;
+        i {
+            transition: .3s ease;
+            opacity: .5;
+            &:hover { opacity: 1 }
+        }
+    }
+}

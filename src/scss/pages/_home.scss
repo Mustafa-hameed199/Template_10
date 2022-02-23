@@ -1,0 +1,20 @@
+.home {
+    min-height: 100vh;
+    padding: 120px 0 60px ;
+    @include br(md) { padding-top: 60px }
+    background: url(/src/img/hero-bg.png) no-repeat right;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    h1 { font-size: clamp(2rem , 1rem + 5vw , 3rem) }
+    h2 { font-size: clamp(1.25rem , 1rem + 2vw , 1.625rem) }
+    .btn {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        i {
+            transition: .3s ease-out;
+        }
+        &:hover { i { transform: translateX(5px) } }
+    }
+}

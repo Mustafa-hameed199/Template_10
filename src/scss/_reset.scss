@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { font-family: 'Nunito', sans-serif }
+
+p { color: $text }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul { list-style: none }
+
+.sec { overflow: hidden } // sections 
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.btn-primary {
+    &:hover {
+        border-color:hsl(234, 86%, 65%);
+        background-color: hsl(234, 86%, 65%);
+    }
+}

@@ -1,0 +1,49 @@
+.features {
+    .first-row {
+        h3 { font-size: 18px }
+        .content {
+            box-shadow: 0 0 10px rgba(black, .075);
+            i { 
+                transition: .3s ease;
+                background-color: $light2;
+            }
+            &:hover i { 
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+    }
+    .second-row {
+        .nav-pills .nav-item.show .nav-link,
+        .nav-pills .nav-link.active {
+            background: transparent;
+            color: $primary;
+            border-bottom: 3px solid $primary;
+        }
+        .nav-pills {
+            .nav-link { 
+                border-radius: 0;
+                padding: 12px 0 14px;
+                margin: 12px 25px -2px 0;
+                font-size: 15px;
+                color: $info;
+            }
+        }
+    
+        .tab-content {
+            h4 { font-size: 18px }
+        }
+    }
+
+    .third-row {
+        .icon {
+            font-size: 40px;
+        }
+        .text {
+            p {
+                font-size: 15px;
+                color: rgba($text , .7);
+            }
+        }
+    }
+}

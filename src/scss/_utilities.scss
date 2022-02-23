@@ -1,0 +1,132 @@
+$spacers: (
+  0: 0,
+  1:  $spacer * .25,
+  2:  $spacer * .5,
+  75: $spacer * .75,
+  3:  $spacer,
+  4:  $spacer * 1.5,
+  5:  $spacer * 2,
+  6:  $spacer * 2.5,
+  7:  $spacer * 3,
+  8:  $spacer * 3.5,
+  9:  $spacer * 4,
+  10:  $spacer * 6,
+);
+
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Add Custom Utilities
+
+$utilities: (
+    "custom-cursor": (
+        property: cursor,
+        class: c,
+        values: pointer none,
+    ),
+    "section-padding": (
+        property: padding-top padding-bottom,
+        class: sec,
+        values: (
+            py: 3.75rem, // 60px
+        ),
+    ),
+    "custom-font-family": (
+        property: font-family,
+        class: font,
+        values: (
+            open-sans:"Open Sans",
+        ),
+    ),
+    "custom-font-size": (
+        property: font-size,
+        class: fs,
+        values: (
+            14: 14px,
+        ),
+    ),
+    "custom-background-color": (
+        property: background-color,
+        class: bg,
+        responsive: true,
+        values: map-merge($theme-colors , ("transparent": transparent )),
+    ),
+    "custom-width": (
+        property: width,
+        class: w,
+        responsive: true,
+        values: (
+            fit : fit-content,
+            min: min-content,
+            max: max-content,
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+        ),
+    ),
+    /////////////////////////////////// For Revealing Animation /////// [start] ////////////
+    "custom-transition-delay": (
+        property: transition-delay,
+        class: td,
+        responsive: true,
+        values: (
+            0:   0s,
+            1:  .1s,
+            2:  .2s,
+            3:  .3s,
+            4:  .4s,
+            5:  .5s,
+            6:  .6s,
+            7:  .7s,
+            8:  .8s,
+            9:  .9s,
+            10:  1s,
+            11:  1.1s,
+            12:  1.2s,
+            13:  1.3s,
+            14:  1.4s,
+            15:  1.5s,
+        ),
+    ),
+    "custom-transform-translate":(
+        property: transform,
+        class: tr,
+        values: (
+            y-100px: translateY(100px),
+            y-50px: translateY(50px),
+            y-100: translateY(100%),
+            y-50: translateY(50%),
+            y-25: translateY(25%),
+            yn-100px: translateY(-100px),
+            yn-50px: translateY(-50px),
+            yn-100: translateY(-100%),
+            yn-50: translateY(-50%),
+            yn-25: translateY(-25%), // n => negative
+            
+            x-100px: translateY(100px),
+            n-50px: translateY(50px),
+            x-100: translateX(100%),
+            x-50: translateX(50%),
+            x-25: translateX(25%),
+            xn-100px: translateY(-100px),
+            xn-50px: translateY(-50px),
+            xn-100: translateX(-100%),
+            xn-50: translateX(-50%),
+            xn-25: translateX(-25%),
+            
+            scale-5: scale(0.5),
+            scale-6: scale(0.6),
+            scale-7: scale(0.7),
+            scale-8: scale(0.8),
+            scale-9: scale(0.9),
+            scale-10: scale(1),
+            scale-11: scale(1.1),
+            scale-12: scale(1.2),
+            scale-13: scale(1.3),
+            scale-14: scale(1.4),
+            scale-15: scale(1.5),
+        ),
+    ),
+    /////////////////////////////////// For Revealing Animation /////// [end] ////////////
+
+);
