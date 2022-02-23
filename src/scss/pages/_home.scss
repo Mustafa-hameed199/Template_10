@@ -2,7 +2,7 @@
     min-height: 100vh;
     padding: 120px 0 60px ;
     @include br(md) { padding-top: 60px }
-    background: url(/src/img/hero-bg.png) no-repeat right;
+    background: url(/dist/img/hero-bg.png) no-repeat right;
     background-size: cover;
     background-attachment: fixed;
 
